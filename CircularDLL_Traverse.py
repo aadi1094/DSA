@@ -68,6 +68,17 @@ class CircularDoublyLL:
                     break
                 tempNode = tempNode.next
 
+    #Traverse_Reverse
+    def revTraverseCDLL(self):
+        if self.head is None:
+            return "CDLL does not exist"
+        else:
+            tempNode=self.tail
+            while tempNode:
+                print(tempNode.value)
+                if tempNode==self.head:
+                    break
+                tempNode = tempNode.prev
 
 
 circularDLL=CircularDoublyLL()
@@ -81,3 +92,5 @@ circularDLL.insertCDLL(6,2)
 circularDLL.traverseCDLL()
 
 print([node.value for node in circularDLL])
+
+circularDLL.revTraverseCDLL()
