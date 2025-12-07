@@ -9,4 +9,6 @@ def max_profit(prices):
         else:
             max_profit=max(max_profit,prices[i]-start)
     return max_profit
+
+print(max_profit(prices))  # Output: 5
            

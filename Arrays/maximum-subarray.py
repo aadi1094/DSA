@@ -1,4 +1,4 @@
-nums = [5, 4, -1, 7, 8]
+nums = [5, 4, -1, 7, 8,2]
 
 def max_sub_array(nums):
     max_current = max_global = nums[0]
@@ -7,5 +7,4 @@ def max_sub_array(nums):
         max_global = max(max_global, max_current)
     return max_global
 
-print(max_sub_array(nums))  # Output: 23
-
+print(max_sub_array(nums))  
